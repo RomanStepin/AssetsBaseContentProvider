@@ -158,7 +158,7 @@ public class AssetsBaseContentProvider extends ContentProvider {
     static class Helper extends SQLiteOpenHelper
     {
         Context contextCP;
-        public Helper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version)  {
+        Helper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version)  {
             super(context, name, factory, version);
             contextCP = context;
         }
